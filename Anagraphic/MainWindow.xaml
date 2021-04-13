@@ -1,0 +1,34 @@
+﻿<Window x:Class="Anagraphic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anagraphic"
+        mc:Ignorable="d"
+        Title="Anagrafica Sport" Background="Gainsboro" Height="500" Width="950">
+    <Grid>
+        <Label Content="Anagraphic" HorizontalAlignment="Left" Margin="347,10,0,0" VerticalAlignment="Top" Height="56" Width="164" FontSize="30"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="64,129,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Surname:" HorizontalAlignment="Left" Margin="64,207,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="64,285,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="163,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Height="23" Margin="179,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox x:Name="txtAge" HorizontalAlignment="Left" Height="23" Margin="179,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <RadioButton x:Name="rdnFootball" Content="Football" HorizontalAlignment="Left" Margin="424,126,0,0" VerticalAlignment="Top" FontSize="18" Width="87" GroupName="Sport" Checked="rdnFootball_Checked"  />
+        <RadioButton x:Name="rdnSwimming" Content="Swimming" HorizontalAlignment="Left" Margin="556,126,0,0" VerticalAlignment="Top" FontSize="18" Width="106" GroupName="Sport" Checked="rdnSwimming_Checked"  />
+        <RadioButton x:Name="rdnVolleyball" Content="Volleyball" HorizontalAlignment="Left" Margin="683,126,0,0" VerticalAlignment="Top" FontSize="18" Width="102" GroupName="Sport" Checked="rdnVolleyball_Checked" />
+        <RadioButton x:Name="rdnBarcellona" Content="Barcellona" HorizontalAlignment="Left" Margin="450,207,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Football" IsEnabled="False"/>
+        <RadioButton x:Name="rdnJuventus" Content="Juventus" HorizontalAlignment="Left" Margin="556,207,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Football" IsEnabled="False"/>
+        <RadioButton x:Name="rdnSassuolo" Content="Sassuolo" HorizontalAlignment="Left" Margin="661,207,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Football" IsEnabled="False"/>
+        <Label x:Name="lblTeam" Content="Favourite Team?" HorizontalAlignment="Left" Margin="450,176,0,0" VerticalAlignment="Top" IsEnabled="False" FontSize="16"/>
+        <Label x:Name="lblSwimmer" Content="Favourite Swimmer?" HorizontalAlignment="Left" Margin="450,241,0,0" VerticalAlignment="Top" FontSize="16" IsEnabled="False"/>
+        <Label x:Name="lblVolleyball" Content="Favourite volleyball player?" HorizontalAlignment="Left" Margin="450,330,0,0" VerticalAlignment="Top" IsEnabled="False" FontSize="16"/>
+        <RadioButton x:Name="rdnMarco" Content="Marco" HorizontalAlignment="Left" Margin="450,295,0,0" VerticalAlignment="Top" FontSize="15" IsEnabled="False" GroupName="Swimmer"/>
+        <RadioButton x:Name="rdnSimone" Content="Simone" HorizontalAlignment="Left" Margin="556,295,0,0" VerticalAlignment="Top" IsEnabled="False" FontSize="15" GroupName="Swimmer"/>
+        <RadioButton x:Name="rdnLuigi" Content="Luigi" HorizontalAlignment="Left" Margin="662,295,0,0" VerticalAlignment="Top" FontSize="15" IsEnabled="False" GroupName="Swimmer"/>
+        <RadioButton x:Name="rdnThomas" Content="Thomas" HorizontalAlignment="Left" Margin="440,378,0,0" VerticalAlignment="Top" FontSize="15" IsEnabled="False" GroupName="Volleyball Player"/>
+        <RadioButton x:Name="rdnJimmy" Content="Jimmy" HorizontalAlignment="Left" Margin="573,378,0,0" VerticalAlignment="Top" IsEnabled="False" FontSize="15" GroupName="Volleyball Player"/>
+        <RadioButton x:Name="rdnPieros" Content="Pieros" HorizontalAlignment="Left" Margin="683,378,0,0" VerticalAlignment="Top" IsEnabled="False" FontSize="15" GroupName="Volleyball Player"/>
+        <Button x:Name="btnCheck" Content="Check" HorizontalAlignment="Left" Margin="813,430,0,0" VerticalAlignment="Top" Width="75" Click="btnCheck_Click" />
+    </Grid>
+</Window>
